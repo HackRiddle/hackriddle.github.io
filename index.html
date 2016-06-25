@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta name="google-site-verification" content="6_rUvRuYPpRJ3Ji_xcYZpc-H0n3OZI4mTNxh6rI6Xus" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>HackRiddle</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<title>HackRiddle</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+	<style>
+		body {
+			overflow-x: hidden
+		}
+		
+		#plane {
+			position: absolute;
+			left: -1000px;
+			z-index: 3;
+			margin-top: 50px;
+		}
+
+	</style>
 </head>
+
 <body>
-  <!--
+	<img width="200px" id="plane" src="airplane_nobg.png"/>
+	<!--
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">
@@ -30,10 +47,10 @@
   </nav>
   -->
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="col s4 m1 push-s4"><span class="flow-text"><center>
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<div class="col s4 m1 push-s4"><span class="flow-text"><center>
           <p></p><img style="margin-top: 0px; max-width: 400px" width="100%" src="hacklogo.png">
         </center></center></div>
        
@@ -299,7 +316,24 @@ Awesome!  We can't wait to hear from you!  Email the organizers at <a href="mail
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+<script>
+		$(function() {
+			var img = $("#plane"),
+				width = img.get(0).width,
+				screenWidth = $(window).width(),
+				duration = 5000;
+
+			function animatePlane() {
+				img.css("left", -width).animate({
+					"left": screenWidth
+
+				}, duration);
+			}
+
+			animatePlane();
+		});
+
+	</script>
 
   </body>
 </html>
-			
