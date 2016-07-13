@@ -1,353 +1,334 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<!--Import Google Icon Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-	<link type="text/css" rel="stylesheet" href="css/timeline.css" media="screen,projection" />
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<style>
-		ul {
-			padding: 0;
-			margin: 0;
-			list-style: none;
-		}
-		
-		.jSlots-wrapper {
-			overflow: hidden;
-			height: 42px;
-			display: inline-block;
-			/* to size correctly, can use float too, or width*/
-			border: 0px solid #999;
-		}
-		
-		.slot {
-			float: left;
-		}
-		
-		blockquote {
-			margin: 20px 0;
-			padding-left: 1.5rem;
-			border-left: 5px solid green;
-			/* Just change the color value and that's it*/
-		}
-		
-		nav {
-			height: 100px;
-			line-height: 100px;
-		}
-		
-		nav i,
-		nav [class^="mdi-"],
-		nav [class*="mdi-"],
-		nav i.material-icons {
-			height: 100px;
-			line-height: 100px;
-		}
-		
-		nav .button-collapse i {
-			height: 100px;
-			line-height: 100px;
-		}
-		
-		nav .brand-logo {
-			font-size: 1.6rem;
-		}
-		
-		@media only screen and (min-width: 601px) {
-			nav,
-			nav .nav-wrapper i,
-			nav a.button-collapse,
-			nav a.button-collapse i {
-				height: 100px;
-				line-height: 100px;
-			}
-		}
-
-	</style>
-	<script>
-		var names = ["Web developer", "Innovator", "IT Specialist", "Entrepreneur", "Creator", "Pebble enthusiast", "Coffee lover"];
-
-		function shuffleArray(array) {
-			for (var i = array.length - 1; i > 0; i--) {
-				var j = Math.floor(Math.random() * (i + 1));
-				var temp = array[i];
-				array[i] = array[j];
-				array[j] = temp;
-			}
+    <meta name="google-site-verification" content="6_rUvRuYPpRJ3Ji_xcYZpc-H0n3OZI4mTNxh6rI6Xus" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>HackRiddle</title>
 
 
-			document.getElementById("traitsHolder").innerHTML = array[0] + ", " + array[1] + ", and " + array[2] + "";
 
-		}
-
-		function unfade(element) {
-			var op = 0.1; // initial opacity
-			element.style.display = 'block';
-			var timer = setInterval(function() {
-				if (op >= 1) {
-					clearInterval(timer);
-				}
-				element.style.opacity = op;
-				element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-				op += op * 0.1;
-				//alert("here");
-			}, 10);
-		}
-
-		function runSequence() {
-			unfade(traitsHolder);
-			shuffleArray(names);
-
-		}
-
-	</script>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
-<body onload="runSequence()">
-	<nav class="green darken-2" role="navigation">
-		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><h2>Tim the Guy</h2></a>
-			<ul class="right hide-on-med-and-down">
-				<li>
-					<a href="#"></a>
-				</li>
-			</ul>
+<body>
+    <div class="navbar-fixed">
+        <nav class="amber lighten-1 navbar-fixed " role="navigation" style="margin-bottom: -20px">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo">
+                    <img height="40px" style="margin-top: 8px" src="justPlaneWhite.png" class="hide-on-med-and-up">
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="white-text page-scroll" href="#about">About</a></li>
+                    <li><a class="white-text page-scroll" href="#sponsors">Sponsors</a></li>
+                    <li><a class="white-text page-scroll" href="#FAQs">FAQs</a></li>
+                </ul>
 
-			<ul id="nav-mobile" class="side-nav">
-				<li>
-					<a href="#"></a>
-				</li>
-			</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-		</div>
-	</nav>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
+                    <li><a class="page-scroll" href="#FAQs">FAQs</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>`
+    </div>
+    <!-- Navigation -->
+    <!--<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+             Brand and toggle get grouped for better mobile display 
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">HackRiddle</a>
+            </div>-->
 
-	<main>
-		<div class="section green" id="index-banner">
-			<div class="container">
-				<div class="row">
-					<div class="col s12 m12">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sponsors">Sponsors</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#FAQs">FAQs</a>
+                    </li>
+                </ul>
+            </div>-->
+    <!-- /.navbar-collapse -->
+    <!-- </div>
+         /.container-fluid 
+    </nav>-->
 
+    <section id="page-top">
+        <div id="index-banner" class="parallax-container" style="min-height: 500px;">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="col s4 m1 push-s4"><span class="flow-text"><center>
+                  <p><br></p>      
+<div class="hide-on-small-only">
+            
+            <p><br></p>
+            <p><br></p>
+            </div></p><h3 class="hide-on-med-and-up">Hack<b>Riddle</b></h3><img class="hide-on-small-only" style="max-width: 400px" width="100%" src="hacklogo.png" >
+        </center></center></div>
+       
+        <div class="row center">
+          <h5 class="header col s12 m12 l12"><b>October 15-16, 2016</b><br> Embry-Riddle Aeronautical University's first 24-hour Hackathon<br> Daytona Beach, FL</h5>
 
+          
+          <b><a href="https://caeley.typeform.com/to/Ke9m1B" style="margin-top: 30px" id="download-button" class="btn-large waves-effect waves-light white-text amber lighten-1">Apply</a></b>
+          <br>
+            <div class="hide-on-small-only">
+            <p><br></p>
+            <p><br></p>
+                <p><br></p>
+            <p><br></p>
+                <p><br></p>
+                <p><br></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+</section>
 
-						<h4 class="white-text header center-on-small-only" id="traitsHolder" onmouseover="runSequence()">Developer, IT specialist and innovator</h4>
-						<h5 class="light green-text text-lighten-5 center-on-small-only">If there's something you need, I'm your guy.</h5>
+<section id="about">
+<div class="container">
+  <div class="section">
+    <center><img style="margin-top: 0px; max-width: 400px; display: none;" width="100%" src="justPlaneBlack.png" style="display: none;"></center>
+     <center><h3>What Is HackRiddle?</h3></center>
+     <center><h5>HackRiddle is a 24 hour hackathon that plans to bring together over 250 students from across the nation to work on anything they set their mind to.  With great sponsors, judges, mentors, and industry leaders, HackRiddle will be an innovation packed weekend for everyone in attendance!
 
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</main>
-
-	<div class="container">
-		<div class="row">
-			<div class="col s12" style="margin-bottom: -40px">
-				<br>
-				<h3 class="green-text lighten-1 header">Experience</h3>
-			</div>
-			<div class="col s12 m3 -on-small-only">
-				<br>
-				<br>
-				<p>Learn more on:</p>
-				<div class="row">
-					<div class="col s6 m12"><a href="https://linkedin.com/in/timtheguy" target="_blank" class="waves-effect waves-light btn-large green lighten-1"><i class="material-icons right">cloud</i>LinkedIn</a></div>
-				</div>
-				<div class="row">
-					<div class="col s6 m12">
-						<a href="https://github.com/timtheguy" target="_blank" class="waves-effect waves-light btn-large green lighten-1"><i class="material-icons right">cloud</i>GitHub</a></div>
-				</div>
-
-				<div class="row">
-					<blockquote>
-						<p>Technical skills:</p>
-						<div class="chip">HTML</div>
-						<div class="chip">CSS</div>
-						<div class="chip">Javascript</div>
-						<div class="chip">Java</div>
-						<div class="chip">PHP</div>
-						<div class="chip">MySQL</div>
-						<div class="chip">Microsoft Office</div>
-					</blockquote>
-				</div>
-
-				<div class="row">
-					<blockquote>
-						<p>Professional skills:</p>
-						<div class="chip">Teamwork</div>
-						<div class="chip">Resourceful</div>
-						<div class="chip">Interpersonal communication</div>
-						<div class="chip">Verbal communication</div>
-						<div class="chip">Creative thinking</div>
-						<div class="chip">Reliable</div>
-					</blockquote>
-				</div>
-
-
-			</div>
-			<div class="col offset-s3 s9 offset-m2 m7 ">
-				<ul class="timeline">
-					<!-- From http://codepen.io/samerpik/pen/OVKyVZ -- under the MIT license. Thanks! -->
-					<li class="event" data-date="Nov. 2015">
-						<h3>Information Technology Student Technnician</h3>
-						<p style="margin-top: -10px">at Embry-Riddle Aeronautical University</p>
-						<p>
-							I've spent some of my spare time as a student at Embry-Riddle Aeronautical University in the information technology department. There, I responded to customer support requests, and met with customers such as university faculty and staff to solve IT issues. I perform thorough troubleshooting on faculty and students machines across campus and facilitate school inventory of machines such as laptops, desktops, printers, and tablets.
-						</p>
-					</li>
-					<li class="event" data-date="Jan. 2016">
-						<h3>Student Assistant for University Marketing</h3>
-						<p style="margin-top: -10px">at Embry-Riddle Aeronautical University</p>
-						<p>
-							I worked part-time in the Marketing and Enrollment office at my university developing email marketing content, preparing and formatting emails for prospective students in HTML and CSS. I selected content and layout designs for these emails.
-						</p>
-
-					</li>
-					<li class="event" data-date="Jun. 2015">
-						<h3>Information Technology Intern</h3>
-						<p style="margin-top: -10px">at Duval County Public Schools</p>
-						<p>The summer after I graduated from high school, I continued to spend my time in the classroom. As an intern, I worked to inventory the school district's computer assets, and maintained/serviced damaged hardware and malfunctioning components. Our team introduced Microsoft Office 2013 and new proprietary software to nearly three thousand middle school laptop computers.
-						</p>
-					</li>
-					<li class="event" data-date="Oct. 2012">
-						<h3>Web Developer</h3>
-						<p style="margin-top: -10px">at First Coast Promotions</p>
-						<p>I worked with local company First Cost Promotions, a seller and distributor of promotional products, to build an ecommerce platform for clubs and organizations. Using HTML and CSS technologies, I integrated PayPal order forms with hundreds of proucts being sold.
-						</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col s12">
-				<h3 class="header green-text">Projects and Portfolio</h3>
-			</div>
-			<div class="col s12 m6">
-				<div class="card hoverable">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/hackriddle.PNG">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Hack Riddle<i class="material-icons right">more_vert</i></span>
-
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Hack Riddle Website<i class="material-icons right">close</i></span>
-						<p>Built the promotional and registration website for Embry-Riddle Aeronautical University's first hackathon, HackRiddle.</p>
-						<p>
-							<br><a class="waves-effect waves-light btn green lighten-1 ">View site</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m6">
-				<div class="card hoverable">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/majorkey.PNG">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">MajorKey<i class="material-icons right">more_vert</i></span>
-
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">MajorKey<i class="material-icons right">close</i></span>
-						<p>MajorKey is a realtime safety net for user accounts. Using the principle of keystroke dynamics, this system verifies users based on the pattern of their computer keystrokes.</p>
-						<p><a class="waves-effect waves-light btn green lighten-1" href="http://www.safe-key.net">View site</a>&nbsp;
-							<a class="waves-effect waves-light btn green lighten-1" href="http://devpost.com/software/majorkey">View write-up</a></p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<!-- container ends -->
-	<footer class="page-footer  green">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">In Progress</h5>
-					<p class="grey-text text-lighten-4">This personal webpage is a work in progress. Expect great updates coming soon!</p>
-				</div>
-				<div class="col l4 offset-l2 s12" style="display: none;">
-					<h5 class="white-text">Who am I?</h5>
-					<div id="hideUntilShown" style="display: blocks;">
-						<h4 class="white-text header center-on-small-only">
-						<ul class="slot" style="width: auto;">
-
-							<li>A Web developer,</li>
-							<li>An Innovator,</li>
-							<li>An IT Specialist,</li>
-							<li>An Entrepreneur,</li>
-							<li>A Creator,</li>
-							<li>A Pebble enthusiast,</li>
-							<li>A Coffee lover,</li>
-						</ul>
-						</h4>
-						<h4 class="white-text header center-on-small-only" style="margin-top: -25px;">
-						<ul class="slot1" style="">
-							<li>Web developer,</li>
-							<li>Innovator,</li>
-							<li>IT Specialist,</li>
-							<li>Entrepreneur,</li>
-							<li>Creator,</li>
-							<li>Pebble enthusiast,</li>
-							<li>Coffee lover,</li>
-						</ul>
-							</h4>
-						</h4>
-						<h4 class="white-text header center-on-small-only" style="margin-top: -25px;">
-						<ul class="slot1" style="">
-							<li>and Web developer</li>
-							<li>and Innovator</li>
-							<li>and IT Specialist</li>
-							<li>and Entrepreneur</li>
-							<li>and Creator</li>
-							<li>and Pebble enthusiast</li>
-							<li>and Coffee lover</li>
-						</ul>
-							</h4>
-					</div>
-					<script>
-						function showAndTell() {
-							document.getElementById('hideUntilShown').style.display = 'block';
-						}
-
-					</script>
-					<input class="btn waves-effect waves-light green lighten-1" type="button" id="playNormal" value="Find Out">
+  </div>
+</div>
+</section>
 
 
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright green darken-2">
-			<div class="container ">
-				© 2016 Copyright Text
-				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-			</div>
-		</div>
-	</footer>
+<section id="sponsors">
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container hide-on-small-only" style="">
+        <div class="row center">
+          <h1>Sponsors</h1>
+          <h5>Coming Soon</h5>
+          <h5 class="header col s12 light">
+            <b>Interested in sponsoring HackRiddle?<br> Email us at info@hackriddle.com!!
+            </b> 
+          </h5> 
+        </div>
+      </div>
+    <div class="container hide-on-med-and-up" style="margin-top: -125px;">
+        <div class="row center">
+          <h1>Sponsors</h1>
+          <h5>Coming Soon</h5>
+          <h5 class="header col s12 light">
+            <b>Interested in sponsoring HackRiddle?<br> Email us at info@hackriddle.com!
+            </b> 
+          </h5> 
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+</section>
 
-	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/jquery.jSlots.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" charset="utf-8">
-		// normal example
-		$('.slot').jSlots({
-			spinner: '#playNormal',
-			winnerNumber: 7
-		});
+<section id="FAQs">
+  <div class="container">
+    <div class="section">
+       <center><h1>FAQs</h1></center>
 
-		$('.slot1').jSlots({
-			spinner: '#playNormal',
-			winnerNumber: 7
-		});
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">info_outline</i></h2>
+            <h5 class="center">What is HackRiddle?</h5>
 
-	</script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+            <p class="light">
+              <center>
+              HackRiddle is a 24 hour hackathon hosted by the Hacker Club at Embry-Riddle Aeronautical University.  Over 250 students from all across the nation will be brought together to build awesome projects using both software and hardware, that compete to win prizes.  There will be great food, stickers, and sleep is optional!
+              </center> 
+            </p>
 
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">group_work</i></h2>
+            <h5 class="center">Who can attend?</h5>
+
+            <p class="light">
+              <center>
+              HackRiddle is open to any undergraduate at any college.  Non-ERAU Students must be at least 18 years old.  Unfortunately, at this time, high schoolers (who are younger than 18 years old) cannot attend.
+      </center>
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">settings</i></h2>
+            <h5 class="center">How Much Does it Cost to Attend HackRiddle?
+</h5>
+
+            <p class="light">
+              <center>
+                HackRiddle is entirely free, with no fees for admission.  Food, swag, and accommodations will all be provided for you with no charge. 
+              </center>
+              </p>
+          </div>
+        </div>
+
+      </div>
+<div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">info_outline</i></h2>
+            <h5 class="center">It's My First Hackathon!</h5>
+
+            <p class="light">
+              <center>
+              No worries!  HackRiddle is beginner friendly, so no experience necessary!  There will be plenty of mentors on hand to help you bring your wildest dreams into creation!
+
+              </center> 
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">group_work</i></h2>
+            <h5 class="center">What Should I Bring?
+</h5>
+
+            <p class="light">
+              <center>
+              Bring your Student ID for check in, along with your laptop and charger for hacking.  You can bring a sleeping bag and pillow if you want to sleep, as well as any hardware that will help your project.
+      </center>
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">settings</i></h2>
+            <h5 class="center">What If I Don't Have a Team?</h5>
+
+            <p class="light">
+              <center>
+                Dont worry!  We will have team forming events that will help you bring together your dream team!  Feel free to join any team. Max team size is 4 hackers.
+              </center>
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">info_outline</i></h2>
+            <h5 class="center">Can I Start Working on my Hack Before HackRiddle?
+</h5>
+
+            <p class="light">
+              <center>
+             Unfortunately, all work on your hacks must been during the 24 hour event.  Projects that have been worked on before the start of the event won't be allowed to enter for judging.
+              </center> 
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">group_work</i></h2>
+            <h5 class="center">Do You Provide Hardware?</h5>
+
+            <p class="light">
+              <center>
+              If you are planning to work on a hardware hack, please feel free to bring anything you think will best benefit your project!  We are working on bringing hardware to the event to lend out, and we will have more information on that soon!
+      </center>
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Is There a Code of Conduct?</h5>
+
+            <p class="light">
+              <center>
+                We want all hackers to have a great time at HackRiddle, so we will be using the MLH Code of Conduct.  <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_new">You can read it here.</a> 
+              </center>
+              </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center amber-text text-lighten-2"><i class="material-icons">group_work</i></h2>
+            <h5 class="center">Do You Have a Question That Wasn't Answered Here?</h5>
+
+            <p class="light">
+              <center>
+Awesome!  We can't wait to hear from you!  Email the organizers at <a href="mailto:info@hackriddle.com"><b>info@hackriddle.com</b></a> and we will get you an answer to whatever questions you have!
+      </center>
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+ 
+</center>
+</center>
+
+
+
+
+
+  <footer class="page-footer black-text white lighten-2">
+   
+    
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+     <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
 </html>
