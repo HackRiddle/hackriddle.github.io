@@ -21,6 +21,7 @@ var myCanvas;
         canvasContainer.style.width="100%";
         canvasContainer.style.height="100%";
         canvasContainer.style.zIndex="1000";
+        canvasContainer.style.pointerEvents="none";
         superContainer=document.body;
       }
       else
@@ -39,6 +40,7 @@ var myCanvas;
     myCanvas.style.display = 'block'
       myCanvas.style.position = 'fixed';
     myCanvas.id="canvas";
+          myCanvas.style.pointerEvents="none";
       }
       
       var context=myCanvas.getContext('2d');
