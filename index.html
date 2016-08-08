@@ -91,7 +91,10 @@
 			position: relative;
 			top: -65px;
 			visibility: hidden;
+            z-index: 99999;
 		}
+
+        
 
     </style>
     <script>
@@ -106,7 +109,7 @@
     </script>
 </head>
 
-<body>
+<body id="content">
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:25px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
     <div class="navbar-fixed" style="" >
         <nav class="white-text" style="background-color: #083791; " role="navigation">
@@ -662,7 +665,7 @@
                     </div>
                 </div>
             </div>
-                <img width="200px" id="plane" src="airplane_nobg.png"/>
+                <img width="200px" onclick="partyTime()" id="plane" src="airplane_nobg.png"/>
                 </div>
         
 <div style="background-color: #0941aa;" class="amber white-text section" id="index-banner">
@@ -688,6 +691,7 @@
                 <div class="row">
                     <div class="col center-align s12"><br>
                         <p class="white-text text-darken-4" style="margin-bottom: -20px;">Website by <a class="bluelink white-text" href="https://www.timtheguy.com">Tim the Guy</a>: If there's something you need, I'm your guy! </p>
+                        
                     </div>
                 </div>
             </div>
@@ -725,6 +729,16 @@
                         }});
                 });
             </script>
+        <script src="confetti.js"></script>
+                <script src="overlay.js"></script>
+
+            <script>
+            function partyTime(){
+                createCanvasOverlay('rgba(255,255,255,0.5)');
+                StartConfetti();
+            }
+        
+        </script>
             <script>
                 $(function(){
                     $('#magic').click(function(){
@@ -746,6 +760,5 @@
             </script>
             <script src="js/materialize.js"></script>
             <script src="js/init.js"></script>
-            
 </body>
 </html>
