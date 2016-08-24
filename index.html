@@ -14,6 +14,10 @@
     <link rel="icon" href="icon/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
     
     <style>
+		body{
+			background-color: #083791;
+		}
+		
         nav ul a:hover {
             background-color: #ffc107;
         }
@@ -122,9 +126,12 @@
                 <a id="logo-container" href="#" class="hide-on-large-only brand-logo" style="text-align: left;"> <img height="30px" style="margin-top: 12px; margin-left: -80px;" src="img/hackRiddleLongNoBG.png"> </a>
                 <ul class="white-text right hide-on-med-and-down">
                     <li><a class="white-text" href="#about">About</a></li>
-                    <li><a class="white-text" href="#sponsors">Sponsors</a></li>
                     <li><a class="white-text" href="#partners">Partners</a></li>
                     <li><a class="white-text" href="#faq">FAQs</a></li>
+<!--					<li><a class="white-text" href="#faq">Donate</a></li>-->
+					<li><a class="white-text" href="#contact">Contact</a></li>
+
+
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="#">Navbar Link</a></li>
@@ -174,7 +181,7 @@
                                         <h6>Flight:
                                         <h5>ABC123</h5></h6>
                                         <h6>Terminal:
-                                        <h5>LB123</h5></h6>
+											<h5><a target="_new" href="http://goo.gl/yW4MLd" class="biglink">IC101</a></h5></h6>
                                     </div>
                                 </div>
                             </div>
@@ -656,16 +663,23 @@
                 </div>
 				<div class="row">
 					<div class="center-align col offset-s2 s8 offset-m4 m4">
-                        <img src="img/mlh-logo-white.png" style="width: 85%">
+                        <a href="https://mlh.io/" target="_new">
+							<img src="img/mlh-logo-white.png" style="width: 85%">
+						
+						</a>
 						<br/><br/>
                     </div>
 				</div>
                 <div class="row">
                     <div class="center-align col s12 m6">
-                        <img src="img/erau_logo.png" style="width: 85%">
+		                <a href="http://daytonabeach.erau.edu/" target="_new">
+                        		<img src="img/erau_logo.png" style="width: 85%">
+						</a>
                     </div>
                     <div class="center-align col s12 m6">
+						<a href="http://daytonabeach.erau.edu/college-engineering/electrical-computer-software-systems/index.html" target="_new">
                         <img src="img/eccse_logo.png" style="width: 85%">
+						</a>
                     </div>
                 </div>
                 <div class="row">
@@ -680,12 +694,20 @@
 <div style="background-color: #0941aa;" class="amber white-text section" id="index-banner">
             <div class="container">
                 <br>
+									<a class="anchor" name="contact"></a>
+
                 <div class="row">
+	              <div class="col center-align s12" style="margin-bottom: 10px;">
+					  Get in touch with us:
+					</div>
                     <div class="col center-align s12">
                         
                         
                         <a style="background-color: #083791; margin:5px;" href="https://www.facebook.com/hackriddle" target="_blank" class="btn-floating btn-large ">
                           <img src="img/facebook_icon.png" width="100%">
+                        </a>
+						<a style="background-color: #083791; margin:5px;" href="https://twitter.com/HackRiddleERAU" target="_blank" class="btn-floating btn-large ">
+                          <img src="img/twitter_icon.png" width="100%">
                         </a>
                         <a style="background-color: #083791; margin:5px;" href="mailto:info@hackriddle.com" target="_blank" class="btn-floating btn-large ">
                           <i class="material-icons">email</i>
@@ -722,7 +744,7 @@
                     $.ajax({ url: 'https://ipapi.co/json',
                     context: document.body,
                     success: function(data){
-                        if(data.city == 'null'){
+                        if(!data.city){
                             $('#citystate').html('Anywhere' + ', ' + 'USA');
                             $('#citystate1').html('Anywhere' + ', ' + 'USA');
                         }else{
