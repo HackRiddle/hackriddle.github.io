@@ -307,7 +307,7 @@
 					<div class="col s12 s12">
                         <div  class="card-panel hoverable white "  style="background-color: #083791; " style="min-height: 40px;"> <span class="black-text">
                             <center><h4 class="black-text">Schedule</h4></center>
-								
+							<div id="hideLoading">Loading schedule...</div>
 								<script type="x-gridspree-template">
 													 
 								  <table class="bordered responsive-table">
@@ -828,6 +828,10 @@
 
             <!--  Scripts-->
             <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script>
+			 window.onload = function() 
+  { document.getElementById("hideLoading").style.display = "none"; }
+		</script>
             <script>
                 $(document).ready(function(){
                     $.ajax({ url: 'https://ipapi.co/json',
