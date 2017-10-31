@@ -1,4 +1,6 @@
 /* Custom Stylesheet */
+
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -8,50 +10,140 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+	color: #444;
 }
-
 p {
-  line-height: 2rem;
+	line-height: 2rem;
 }
-
 .button-collapse {
-  color: #26a69a;
+	color: #26a69a;
 }
-
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+	min-height: 380px;
+	line-height: 0;
+	height: auto;
+	color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.parallax-container .section {
+	width: 100%;
 }
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+@media only screen and (max-width: 992px) {
+	.parallax-container .section {
+		position: absolute;
+		top: 40%;
+	}
+	#index-banner .section {
+		top: 10%;
+	}
 }
-
+@media only screen and (max-width: 600px) {
+	#index-banner .section {
+		top: 0;
+	}
+}
 .icon-block {
-  padding: 0 15px;
+	padding: 0 15px;
 }
 .icon-block .material-icons {
-  font-size: inherit;
+	font-size: inherit;
+}
+footer.page-footer {
+	margin: 0;
+}
+body {
+	background-color: #083791;
+}
+nav ul a:hover {
+	background-color: #ffc107;
+}
+.link {
+	color: #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+.link:hover {
+	color: #ffffff;
+	border-bottom: 2px solid #ffc107;
+}
+.bluelink {
+	color: #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+.bluelink:hover {
+	color: #ffffff;
+	border-bottom: 2px solid #083791;
+}
+.blacklink {
+	color: #000000;
+	border-bottom: 1px solid #000000;
+}
+.blacklink:hover {
+	color: #000000;
+	border-bottom: 2px solid #ffc107;
+}
+.biglink {
+	color: #000000;
+}
+.biglink:hover {
+	color: #000000;
+	border-bottom: 2px solid #ffc107;
+}
+input[type]:focus+label {
+	color: orange !important;
+}
+input[type]:focus {
+	border-bottom: 1px solid orange;
+	box-shadow: 0 1px 0 0 orange;
+}
+#plane {
+	position: absolute;
+	left: -1000px;
+	z-index: 3;
+	margin-top: 0px;
+}
+a.anchor {
+	display: block;
+	position: relative;
+	top: -65px;
+	visibility: hidden;
+	z-index: 99999;
+}
+.filter {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+.filter:hover {
+	-webkit-filter: brightness(1) invert(0);
+	filter: brightness(1) invert(0);
+}
+body {
+	overflow: hidden;
 }
 
-footer.page-footer {
-  margin: 0;
+/* Preloader */
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	/* change if the mask should have another color then white */
+	z-index: 99;
+	/* makes sure it stays on top */
+}
+#status {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	/* centers the loading animation horizontally one the screen */
+	top: 50%;
+	/* centers the loading animation vertically one the screen */
+	background-image: url(img/status.gif);
+	/* path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px;
+	/* is width and height divided by two */
 }

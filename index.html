@@ -8,148 +8,12 @@
 	<meta property="og:image" content="img/meta_image.png" />
 	<meta property="og:description" content="Register now for HackRiddle 2017, a free aviation-inspired hackathon held in Daytona Beach, FL. Compete with other student teams to win prizes in this 24-hour software and hardware development event." />
 	<title>HackRiddle // November 11th-12th, 2017 // Daytona Beach, FL</title>
+	
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	<link rel="icon" href="icon/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
-
-	<style>
-		body {
-			background-color: #083791;
-		}
-		
-		nav ul a:hover {
-			background-color: #ffc107;
-		}
-		
-		.link {
-			color: #ffffff;
-			border-bottom: 2px solid #ffffff;
-		}
-		
-		.link:hover {
-			color: #ffffff;
-			border-bottom: 2px solid #ffc107;
-		}
-		
-		.bluelink {
-			color: #ffffff;
-			border-bottom: 2px solid #ffffff;
-		}
-		
-		.bluelink:hover {
-			color: #ffffff;
-			border-bottom: 2px solid #083791;
-		}
-		
-		.blacklink {
-			color: #000000;
-			border-bottom: 1px solid #000000;
-		}
-		
-		.blacklink:hover {
-			color: #000000;
-			border-bottom: 2px solid #ffc107;
-		}
-		
-		.biglink {
-			color: #000000;
-		}
-		
-		.biglink:hover {
-			color: #000000;
-			border-bottom: 2px solid #ffc107;
-		}
-		/*
-            div.colorhover:hover {
-                background-color: #ffc107;
-            }
-
-            div.colorhover{
-                background-color: #083791;
-            }
-        */
-		
-		input[type]:focus+label {
-			color: orange !important;
-		}
-		
-		input[type]:focus {
-			border-bottom: 1px solid orange;
-			box-shadow: 0 1px 0 0 orange;
-		}
-		
-		#plane {
-			position: absolute;
-			left: -1000px;
-			z-index: 3;
-			margin-top: 0px;
-		}
-		
-		a.anchor {
-			display: block;
-			position: relative;
-			top: -65px;
-			visibility: hidden;
-			z-index: 99999;
-		}
-		
-		.filter {
-			-webkit-filter: brightness(0) invert(1);
-			filter: brightness(0) invert(1);
-		}
-		
-		.filter:hover {
-			-webkit-filter: brightness(1) invert(0);
-			filter: brightness(1) invert(0);
-		}
-		
-		body {
-			overflow: hidden;
-		}
-		/* Preloader */
-		
-		#preloader {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: #fff;
-			/* change if the mask should have another color then white */
-			z-index: 99;
-			/* makes sure it stays on top */
-		}
-		
-		#status {
-			width: 200px;
-			height: 200px;
-			position: absolute;
-			left: 50%;
-			/* centers the loading animation horizontally one the screen */
-			top: 50%;
-			/* centers the loading animation vertically one the screen */
-			background-image: url(img/status.gif);
-			/* path to your loading animation */
-			background-repeat: no-repeat;
-			background-position: center;
-			margin: -100px 0 0 -100px;
-			/* is width and height divided by two */
-		}
-
-	</style>
-	<script>
-		//    function randomize() {
-		//        document.getElementById('colorhover').style.backgroundColor = randomColors();
-		//    }
-		//    // random colors - taken from here:
-		//    // http://www.paulirish.com/2009/random-hex-color-code-snippets/
-		//    function randomColors() {
-		//        return '#' + Math.floor(Math.random() * 16777215).toString(16);
-		//    }
-
-	</script>
 
 	<meta name="theme-color" content="#083791">
 
@@ -890,11 +754,10 @@
 		<!--  Scripts-->
 		<!--            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
 		<script>
-			window.onload = function() {
-			}
+			window.onload = function() {}
 
 		</script>
-		
+
 		<script src="js/confetti.js"></script>
 		<script src="js/overlay.js"></script>
 
@@ -936,31 +799,31 @@
 			//<![CDATA[
 			// Please don't judge this Javascript, it'd a quick-n-dirty fix that uses Google Sheets as a backend :-)
 
-				var url = 'https://script.google.com/macros/s/AKfycbx900WkNsrY-V37U6SLrAuFaFmz6-vH1CeBKzT1QVbdEFkU4YI/exec'
+			var url = 'https://script.google.com/macros/s/AKfycbx900WkNsrY-V37U6SLrAuFaFmz6-vH1CeBKzT1QVbdEFkU4YI/exec'
 
-				$.get({
-					url: url,
-					context: document.body,
-					success: function(data) {
-						var scheduleString = '<table class="bordered responsive-table"><thead><tr><th data-field="id">Time</th><th data-field="price">Event</th></tr></thead><tbody>';
-						for (var i = 0; i < data.length; i++) {
-							scheduleString += "<tr>";
-							scheduleString += "<td>" + data[i].Time + "</td>";
-							scheduleString += "<td>" + data[i].Event + "</td>";
-							scheduleString += "<tr>";
-						}
-
-						scheduleString += "</tbody></table>"
-						$('#schedule').html(scheduleString);
-						document.getElementById("hideLoading").style.display = "none";
-					},
-					error: function() {
-						document.getElementById("hideLoading").style.display = "none";
-						$('#schedule').html('Error. Please reach out to info@hackriddle.com');
+			$.get({
+				url: url,
+				context: document.body,
+				success: function(data) {
+					var scheduleString = '<table class="bordered responsive-table"><thead><tr><th data-field="id">Time</th><th data-field="price">Event</th></tr></thead><tbody>';
+					for (var i = 0; i < data.length; i++) {
+						scheduleString += "<tr>";
+						scheduleString += "<td>" + data[i].Time + "</td>";
+						scheduleString += "<td>" + data[i].Event + "</td>";
+						scheduleString += "<tr>";
 					}
-				});
-			
-			
+
+					scheduleString += "</tbody></table>"
+					$('#schedule').html(scheduleString);
+					document.getElementById("hideLoading").style.display = "none";
+				},
+				error: function() {
+					document.getElementById("hideLoading").style.display = "none";
+					$('#schedule').html('Error. Please reach out to info@hackriddle.com');
+				}
+			});
+
+
 			$(window).on('load', function() { // makes sure the whole site is loaded
 					$('#status').fadeOut(); // will first fade out the loading animation
 					$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
@@ -971,7 +834,7 @@
 				//]]>
 
 		</script>
-	<script>
+		<script>
 			$(document).ready(function() {
 				$.ajax({
 					url: 'https://ipapi.co/json',
@@ -993,7 +856,7 @@
 					}
 				});
 
-				
+
 			});
 
 		</script>
