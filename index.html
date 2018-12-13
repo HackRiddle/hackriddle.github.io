@@ -1,739 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<title>HackRiddle // November 11th-12th, 2017 // Daytona Beach, FL</title>
+    <!--Import Google Icon Font-->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <style>
+        body {
+        font-family: "Lucida Console", Monaco, monospace;
+    }
 
-	<!-- Meta tags -->
-	<meta name="google-site-verification" content="6_rUvRuYPpRJ3Ji_xcYZpc-H0n3OZI4mTNxh6rI6Xus" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-	<meta property="og:image" content="img/meta_image.png" />
-	<meta name="description" content="Register now for HackRiddle 2017, a free aviation-inspired hackathon held in Daytona Beach, FL. Compete with other student teams to win prizes in this 24-hour software and hardware development event.">
-	<meta property="og:description" content="Register now for HackRiddle 2017, a free aviation-inspired hackathon held in Daytona Beach, FL. Compete with other student teams to win prizes in this 24-hour software and hardware development event." />
-	<meta name="theme-color" content="#083791">
-
-	<!-- CSS -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	<link rel="icon" href="icon/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+    
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<!-- Preloader -->
-<div id="preloader">
-	<div id="status">&nbsp;</div>
-</div>
+<body class="black white-text">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s8 m4 offset-s2 offset-m0 center-align">
+                <br>
+                <img width="100%" src="img/logo_small.png" />
+            </div>
+            <div class="col s12 m8">
+                <h4>HackRiddle 2018</h4>
+                <hr>
+                <h5>Date</h5>
+                <p>February 10th to February 11th, 2018</p>
+                <h5>Location</h5>
+                <p>Embry-Riddle Aeronautical University, Daytona Beach</p>
+                <h5>Mission Application</h5>
+                <p>All candidates for HackRiddle 2018 are invited to register below:</p>
+                <a href="https://goo.gl/forms/Js83QcCO6Q7CWZIx1" target="_blank" class="col s12 btn btn-large grey darken-3 waves-effect waves-light">Pre-Register</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <hr>
+                <h3>FAQ</h3>
+                <h5>How do I sign up for HackRiddle?</h5>
+                HackRiddle accepts attendees to the event after reviewing individual applications. You can register
+                here!
 
-<!-- Main page content -->
+                <h5>What if it's my first hackathon?</h5>
+                No worries! HackRiddle is beginner friendly, so no experience necessary! There will be plenty of
+                workshops and mentors on hand to help you bring your wildest dreams into creation!
 
-<body id="content">
-	<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
-	<div class="navbar-fixed" style="">
-		<nav class="white-text" style="background-color: #083791; " role="navigation">
+                <h5>What should I bring?</h5>
+                Bring your Student ID for check in, along with your laptop and charger for hacking. You can bring a
+                sleeping bag and pillow if you want to sleep, as well as any hardware that will help your project.
+                Don't be afraid to represent your school!
 
-			<div class="white-text nav-wrapper container">
+                <h5>I'm interested in being a partner!</h5>
+                Being a sponsor/partner of HackRiddle has tons of benefits. Get in touch with us at
+                info@hackriddle.com!
 
-				<a id="logo-container" href="#" class="hide-on-med-and-down brand-logo"> <img height="26px" style="margin-top: 20px" src="img/newer_logo.png"> </a>
-				<a id="logo-container" href="#" class="hide-on-large-only brand-logo" style="text-align: left;"> <img height="20px" style="margin-top: 16px; margin-left: -130px;" src="img/newer_logo.png"> </a>
-				<ul class="white-text right hide-on-med-and-down">
-					<li><a class="white-text" href="#about">About</a></li>
-					<li><a class="white-text" href="#partners">Partners</a></li>
-					<li><a class="white-text" href="#faq">FAQs</a></li>
-					<li><a class="white-text" href="#contact">Contact</a></li>
-				</ul>
-				<ul id="nav-mobile" class="side-nav">
-					<li><a href="#">Navbar Link</a></li>
-				</ul> <a style="display: none;" href="#" data-activates="nav-mobile" class="button-collapse indigo-text text-darken-4 lighten-2"><i class="material-icons">menu</i></a> </div>
-			<div class="amber" style="height: 15px;"></div>
-		</nav>
-	</div>
+                <h5>Who can attend?</h5>
+                HackRiddle is open to any undergraduate at any college. Non-ERAU Students must be at least 18 years
+                old. Unfortunately, at this time, high schoolers (who are younger than 18 years old) cannot attend.
 
-	<div class="section no-pad-bot" style=" background: url('img/bg.jpg') no-repeat 0 0 fixed; background-position: 0px 0px; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size:  cover; ">
-		<div class="container" id="colorhover">
-			<div class="row">
-				<br>
-				<div class="card-panel green white-text" style="text-align: left;">
-					Curious about <b>HackRiddle 2018</b>? You're not alone. Watch <a target="_black" class="link" href="https://www.facebook.com/hackriddle">our Facebook page</a> for announcements! <br>In the meantime, feel free to enjoy last year's site. Can you find the easter egg?
-				</div>
-				
-				<!-- Large style boarding pass -->
-				<div class="col s12 offset hide-on-small-only ">
-					<br>
-					<div style="height: 400px;" id="" class="hoverable card-panel white z-depth-5">
-						<div style="height: 400px; margin: -20px; background-color: #083791;" id="colorhover" class="colorhover col s3 m2">
-							<img style="width: 80%; height: 80%; margin-top: 40px; margin-bottom: 40px; margin-left: 10%;" src="img/barcode.gif" />
-						</div>
-						<div class="row">
-							<div class="left-align col offset-s1 s3"> Departing
-								<h3 style="color: #083791;"><b>YOU</b></h3>
-								<h5>
-									<div id="citystate">Anywhere, USA</div>
-								</h5>
-							</div>
-							<div class="left-align col s1">
-								<h1><div style="margin-top: -5px"><i class="material-icons black-text small">arrow_forward</i></div></h1>
-							</div>
-							<div class="left-align col s5"> Arriving
-								<h3 style="color: #083791;" class=""><b>ERAU</b></h3>
-								<h5><a href="https://goo.gl/XPyotA" class="biglink">Embry-Riddle Aeronautical University</a></h5>
-							</div>
-							<div class="row">
-								<div class="col offset-s1 s8">
-									<br>
-									<br>
-									<div style="margin-bottom: 0px; color: #083791;" class="divider"></div>
-									<div class="left-align col s8">
-										<div style="">
-											<h5><div class="grey-text darken-4">Boarding:</div> November 11th, 2017</h5>
-										</div>
-										<div style="">
-											<h5><div class="grey-text darken-4">Departure:</div> November 12th, 2017</h5>
-										</div>
-									</div>
-									<div class="left-align col s3" style="margin-top: 5px;">
-										<h6>Flight:
-                    <h5>ABC123</h5>
-                    </h6>
-										<h6>Terminal:
-                    <h5><a target="_new" href="http://goo.gl/yW4MLd" class="biglink">IC101</a></h5>
-                    </h6>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<br>
-					<br>
-				</div>
+                <h5>What if I don't have a team?</h5>
+                Dont worry! We will have team forming events that will help you bring together your dream team! Feel
+                free to join any team. Max team size is 4 hackers.
 
-				<!-- Small style boarding pass -->
-				<div class="col s12 hide-on-med-and-up">
-					<br>
-					<div style="height: 400px;" class="hoverable card-panel white">
-						<div style="height: 400px; margin: -20px; background-color: #083791;" class="col s3 m2">
-							<img style="width: 80%; height: 80%; margin-top: 40px; margin-bottom: 40px; margin-left: 10%;" src="img/barcode.gif" />
-						</div>
-						<div class="row">
-							<div class="left-align col offset-s1 s8">
-								<h6>Departing</h6>
-								<h3 style="margin-top: -5px; color: #083791;"><b>YOU</b></h3>
-								<h5 style="margin-top: -20px">
-                  <div id="citystate1">Anywhere, USA</div>
-								</h5>
-							</div>
-							<div class="left-align col offset-s1 s8">
-								<h6>Arriving</h6>
-								<h3 style="margin-top: -5px; color: #083791;"><b>ERAU</b></h3>
-								<h5 style="margin-top: -20px">Embry-Riddle Aeronautical University</h5>
-							</div>
-							<div class="row">
-								<div class="col offset-s1 s8">
-									<div style="margin-bottom: 10px; color: #083791;" class="divider "></div>
-									<div style="">
-										<h6><div class="grey-text darken-4" style="padding-bottom: 5px;">Boarding:</div> <span class="black-text" style="font-size: 20px;">November 11th, 2017</span></h6>
-									</div>
-									<div style="">
-										<h6><div class="grey-text darken-4" style="padding-bottom: 5px;">Departure:</div> <span class="black-text" style="font-size: 20px;">November 12th, 2017</span></h6>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
+                <h5>Do you provide hardware?</h5>
+                If you are planning to work on a hardware hack, feel free to bring anything you think you'll need. We
+                will be featuring the MLH Hardware Lab at our event!
 
-		<a class="anchor" name="about"></a>
-		<div style="background-color: #083791; border-top: 15px solid #ffc107;" class=" section" id="index-banner">
-			<div class="container">
-				<div class="row">
-					<div class="col s12 m6">
-						<div class="card-panel hoverable white" style="min-height: 270px;">
-							<span class="black-text">
-								<h5>Have you booked your flight?</h5>
-								HackRiddle is now accepting applications for you to be a part of <a href="https://goo.gl/XPyotA" class="blacklink">Embry-Riddle Aeronautical University</a>'s second 24-hour hackathon. 
-								<br><br><center>
-								Get your boarding pass...
-								<br>
-								<a data-position="bottom" data-delay="50" data-tooltip="Apply here!" href="https://goo.gl/forms/0JxmVmWmNXHvQNWY2" id="download-button" class=" btn-large waves-effect waves-light white-text amber" style="background-color: #083791; margin-top: 10px;" style="width: 90%">REGISTER NOW </a>
-								</center>
-								<br>
-								<span style="font-size: 12px; padding-top: 20px;">
-									Note: this does not in any way guarantee flight or travel reimbursement to the event 
-								</span>
-							</span>
-						</div>
-					</div>
-					<div class="col s12 m6">
-						<div class="card-panel hoverable white" style="min-height: 270px;">
-							<span class="black-text">
-								<h5>What is HackRiddle?</h5>
-								HackRiddle is a 24 hour hackathon scheduled for November 11th, 2017 at <a href="https://goo.gl/XPyotA" class="blacklink">Embry-Riddle Aeronautical University</a> that plans to bring together over 250 students from across the nation to work on anything they set their mind to. With great industry partners, judges, mentors, and industry leaders, HackRiddle will be an innovation packed weekend for everyone in attendance!
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
+                <h5>Is there a Code of Conduct?</h5>
+                We want all hackers to have a great time at HackRiddle, so we will be using the MLH Code of Conduct. <a
+                    href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">You can read it here.</a>
 
-			<!--			<div class=" section" id="index-banner" style="background-color: #083791;" style=" background: url('img/bg.jpg') no-repeat 0 0 fixed; background-position: 0px 0px; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size:  cover; ">-->
-			<div class="container">
-				<div class="row">
-					<div class="col s12 s12">
-						<div class="card-panel hoverable white " style="background-color: #083791; " style="min-height: 40px;">
-							<span class="black-text"><center><h4 class="black-text">Schedule</h4>
-							<div class="hide-on-med-and-up">
-								Scroll left or right on the schedule below to view additional events.<br><br>
-							</div></center>
-	
-							<div style="text-align: center;" id="hideLoading">
-								Loading schedule...<br>
-								<img style="padding: 20px;" src="img/status.gif"/>
-							</div>
+                <h5>How much does it cost to attend HackRiddle?</h5>
+                HackRiddle is entirely free, with no fees for admission. Food, swag, and accommodations will all be
+                provided for you with no charge.
 
-							<div id="schedule">
-							</div></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div style="background-color: #083791; " class="amber section" id="index-banner">
-				<a class="anchor" name="faq"></a>
-				<div class="container">
-					<div class="col s12 ">
-						<center>
-							<h4 class="white-text">Frequently Asked Questions</h4>
-						</center>
-						<br>
+                <h5>What can I build?</h5>
+                Software for the web and mobile as well as hardware such microcontrollers or wearables. Projects will
+                be judged evenly, independent of platform!
 
-						<!--   Icon Section   -->
-						<div class="row hide-on-small-only">
-							<div class="col s12 m4">
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">assignment</i></h2>
-										<h5 class="center">How do I sign up for HackRiddle?</h5>
-										<p class="light">
-											<center>
-												HackRiddle accepts attendees to the event after reviewing individual applications. You can <a href="https://goo.gl/forms/0JxmVmWmNXHvQNWY2" class="blacklink" target="_blank">register here!</a>
-											</center>
-										</p>
-									</div>
-								</div>
+                <h5>Can I start working on my hack before HackRiddle?</h5>
+                Unfortunately, all work on your hacks must be done during the 24 hour event. Projects that have been
+                worked on before the start of the event won't be allowed to enter for judging.
 
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">fiber_new</i></h2>
-										<h5 class="center">What if it's my first hackathon?</h5>
-										<p class="light">
-											<center>
-												No worries! HackRiddle is beginner friendly, so no experience necessary! There will be plenty of workshops and mentors on hand to help you bring your wildest dreams into creation!
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">shopping_basket</i></h2>
-										<h5 class="center">What should I bring?</h5>
-										<p class="light">
-											<center>
-												Bring your Student ID for check in, along with your laptop and charger for hacking. You can bring a sleeping bag and pillow if you want to sleep, as well as any hardware that will help your project. Don't be afraid to represent your school!
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">link</i></h2>
-										<h5 class="center">I'm interested in being a partner!</h5>
-										<p class="light">
-											<center>
-												Being a sponsor/partner of HackRiddle has tons of benefits. Get in touch with us at <a href="mailto:info@hackriddle.com" class="blacklink" target="_blank">info@hackriddle.com</a>!
-											</center>
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col s12 m4">
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">group</i></h2>
-										<h5 class="center">Who can attend?</h5>
-										<p class="light">
-											<center>
-												HackRiddle is open to any undergraduate at any college. Non-ERAU Students must be at least 18 years old. Unfortunately, at this time, high schoolers (who are younger than 18 years old) cannot attend.
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">person_add</i></h2>
-										<h5 class="center">What if I don't have a team?</h5>
-										<p class="light">
-											<center>
-												Dont worry! We will have team forming events that will help you bring together your dream team! Feel free to join any team. Max team size is 4 hackers.
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">devices_other</i></h2>
-										<h5 class="center">Do you provide hardware?</h5>
-										<p class="light">
-											<center>
-												If you are planning to work on a hardware hack, feel free to bring anything you think you'll need. We will be featuring the MLH Hardware Lab at our event! 
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">book</i></h2>
-										<h5 class="center">Is there a Code of Conduct?</h5>
-										<p class="light">
-											<center>
-												We want all hackers to have a great time at HackRiddle, so we will be using the MLH Code of Conduct. <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="blacklink" target="_new">You can read it here.</a>
-											</center>
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col s12 m4">
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">attach_money</i></h2>
-										<h5 class="center">How much does it cost to attend HackRiddle?</h5>
-										<p class="light">
-											<center>
-												HackRiddle is entirely free, with no fees for admission. Food, swag, and accommodations will all be provided for you with no charge.
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">settings</i></h2>
-										<h5 class="center">What can I build?</h5>
-										<p class="light">
-											<center>
-												Software for the web and mobile as well as hardware such microcontrollers or wearables. Projects will be judged evenly, independent of platform!
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">history</i></h2>
-										<h5 class="center">Can I start working on my hack <i>before</i> HackRiddle?</h5>
-										<p class="light">
-											<center>
-												Unfortunately, all work on your hacks must be done during the 24 hour event. Projects that have been worked on before the start of the event won't be allowed to enter for judging.
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">question_answer</i></h2>
-										<h5 class="center">I have a question that you haven't answered!</h5>
-										<p class="light">
-											<center>
-												We want to create an incredible HackRiddle experience for both new and seasoned hackers. Reach out to the organizing team at <a href="mailto:info@hackriddle.com" class="blacklink" target="_blank">info@hackriddle.com</a> and we'll get you squared away.
-											</center>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="row hide-on-med-and-up">
-							<div class="col s12 m4">
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">assignment</i></h2>
-										<h5 class="center">How do I sign-up for HackRiddle?</h5>
-										<p class="light">
-											<center>
-												HackRiddle accepts attendees to the event after reviewing individual applications. You can <a href="https://hackriddle.typeform.com/to/Ke9m1B" class="blacklink" target="_blank">register here!</a>
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">group</i></h2>
-										<h5 class="center">Who can attend?</h5>
-										<p class="light">
-											<center>
-												HackRiddle is open to any undergraduate at any college. Non-ERAU Students must be at least 18 years old. Unfortunately, at this time, high schoolers (who are younger than 18 years old) cannot attend.
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">attach_money</i></h2>
-										<h5 class="center">How much does it cost to attend HackRiddle?</h5>
-										<p class="light">
-											<center>
-												HackRiddle is entirely free, with no fees for admission. Food, swag, and accommodations will all be provided for you with no charge.
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">fiber_new</i></h2>
-										<h5 class="center">What if it's my first hackathon?</h5>
-										<p class="light">
-											<center>
-												No worries! HackRiddle is beginner friendly, so no experience necessary! There will be plenty of workshops and mentors on hand to help you bring your wildest dreams into creation!
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">person_add</i></h2>
-										<h5 class="center">What if I don't have a team?</h5>
-										<p class="light">
-											<center>
-												Dont worry! We will have team forming events that will help you bring together your dream team! Feel free to join any team. Max team size is 4 hackers.
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">settings</i></h2>
-										<h5 class="center">What can I build?</h5>
-										<p class="light">
-											<center>
-												Software for the web, mobile, or dekstop as well as hardware such microcontrollers or wearables. Projects will be judged evenly, independent of platform!
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">shopping_basket</i></h2>
-										<h5 class="center">What should I bring?</h5>
-										<p class="light">
-											<center>
-												Bring your Student ID for check in, along with your laptop and charger for hacking. You can bring a sleeping bag and pillow if you want to sleep, as well as any hardware that will help your project. Don't be afraid to represent your school!
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">devices_other</i></h2>
-										<h5 class="center">Do you provide hardware?</h5>
-										<p class="light">
-											<center>
-												If you are planning to work on a hardware hack, feel free to bring anything you think you'll need. We will be featuring the MLH Hardware Lab at our event! 
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">history</i></h2>
-										<h5 class="center">Can I start working on my hack <i>before</i> HackRiddle?</h5>
-										<p class="light">
-											<center>
-												Unfortunately, all work on your hacks must be done during the 24 hour event. Projects that have been worked on before the start of the event won't be allowed to enter for judging.
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">book</i></h2>
-										<h5 class="center">Is there a Code of Conduct?</h5>
-										<p class="light">
-											<center>
-												We want all hackers to have a great time at HackRiddle, so we will be using the MLH Code of Conduct. <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="blacklink" target="_new">You can read it here.</a>
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">link</i></h2>
-										<h5 class="center">I'm interested in being a sponsor or a partner!</h5>
-										<p class="light">
-											<center>
-												Being a sponsor/partner of HackRiddle has tons of benefits. Get in touch with us at <a href="mailto:info@hackriddle.com" class="blacklink" target="_blank">info@hackriddle.com</a>!
-											</center>
-										</p>
-									</div>
-								</div>
-
-								<div class="card-panel white">
-									<div class="icon-block">
-										<h2 class="center indigo-text text-darken-4"><i class="material-icons">question_answer</i></h2>
-										<h5 class="center">I have a question that you haven't answered!</h5>
-										<p class="light">
-											<center>
-												We want to create an incredible HackRiddle experience for both new and seasoned hackers. Reach out to the organizing team at <a href="mailto:info@hackriddle.com" class="blacklink" target="_blank">info@hackriddle.com</a> and we'll get you squared away.
-											</center>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div style="background-color: #083791;" class="white-text section" id="index-banner">
-				<div class="container">
-					<a class="anchor" name="partners"></a>
-					<div class="row">
-						<div class="center-align col s12">
-							<br>
-							<h4>Partners</h4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="center-align col s12 offset-m0 m12">
-							<a href="https://lockheedmartin.com/us.html" target="_new">
-								<img class="filter" src="img/lockheed_logo.png" style="width: 100%;">
-							</a>
-							<br/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="center-align col offset-s1 s10 offset-m2 m8">
-							<a href="https://www.rockwellcollins.com/" target="_new">
-								<img class="filter" src="img/rockwell_logo.png" style="width: 65%;">
-							</a>
-							<br/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="center-align col offset-s0 s5 offset-m2 m3">
-							<a href="https://mlh.io/" target="_new">
-								<img class="filter" src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png" style="width: 90%; margin-top: 10px;">
-							</a>
-							<br/>
-						</div>
-						<div class="hide-on-med-and-down center-align col m5">
-							<a href="http://daytonabeach.erau.edu/" target="_new">
-								<img class="filter" src="img/erau_logo_db.png" style="width: 100%">
-							</a>
-						</div>
-						<div class="center-align col s7 hide-on-large-only">
-							<br>
-							<a href="http://daytonabeach.erau.edu/" target="_new">
-								<img class="filter" src="img/erau_logo_db.png" style="width: 90%; margin-top: -10px;">
-							</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="center-align col offset-s0 s8 offset-m2 m5">
-							<a href="http://www.brandmakers.com/" target="_new">
-								<img class="filter" src="img/brandmakers_logo.png" style="width: 100%; margin-top: 10px;">
-							</a>
-
-						</div>
-						<div class="center-align col offset-s0 s3 offset-m0 m2">
-							<a href="http://www.stickermule.com/" target="_new">
-								<img class="filter" src="img/stickermule_logo.png" style="width: 100%; margin-top: 10px;">
-							</a>
-
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="center-align col offset-s3 s6 offset-m4 m4">
-							<a href="http://www.floridahackers.com/" target="_new">
-								<img class="filter" src="img/floridahackers_logo.png" style="width: 40%">
-							</a>
-							<br/>
-						</div>
+                <h5>I have a question that you haven't answered!</h5>
+                We want to create an incredible HackRiddle experience for both new and seasoned hackers. Reach out to
+                the organizing team at info@hackriddle.com and we'll get you squared away.
 
 
-					</div>
-					<div class="row">
-						<div class="center-align col s12">
-							<p style="line-height: 140%;">Interested in becoming a partner and supporting HackRiddle? Contact us at <a class="link" href="mailto:info@hackriddle.com" target="_blank">info@hackriddle.com</a></p>
-						</div>
-					</div>
-					<img width="200px" onclick="partyTime()" id="plane" src="img/airplane_nobg.png" />
-				</div>
+            </div>
+        </div>
+    </div>
 
-				<div style="background-color: #0941aa;" class="amber white-text section" id="index-banner">
-					<div class="container">
-						<br>
-						<a class="anchor" name="contact"></a>
-
-						<div class="row">
-							<div class="col center-align s12" style="margin-bottom: 10px;">
-								Get in touch with us:
-							</div>
-							<div class="col center-align s12">
-
-
-								<a style="background-color: #083791; margin:5px;" href="https://www.facebook.com/hackriddle" target="_blank" class="btn-floating btn-large ">
-									<img src="img/facebook_icon.png" width="100%">
-								</a>
-								<a style="background-color: #083791; margin:5px;" href="https://twitter.com/HackRiddleERAU" target="_blank" class="btn-floating btn-large ">
-									<img src="img/twitter_icon.png" width="100%">
-								</a>
-								<a style="background-color: #083791; margin:5px;" href="mailto:info@hackriddle.com" target="_blank" class="btn-floating btn-large ">
-									<i class="material-icons">email</i>
-								</a>
-								<a id="magic" style="background-color: #083791; margin:5px;" class="btn-floating btn-large ">
-									<i class="large material-icons large">sentiment_satisfied</i>
-								</a>
-
-								<br>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col center-align s12">
-								<br>
-								<p class="white-text text-darken-4" style="line-height: 140%; margin-bottom: -20px;">Website by <a class="bluelink white-text" href="http://www.timtheguy.com">Tim the Guy</a>: If there's something you need, I'm your guy! </p>
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<footer>
-					<div style="background: #083791; margin-bottom: -20px;" class="footer copyright">
-						<div class="container white-text">
-
-						</div>
-						<br>
-					</div>
-				</footer>
-			</div>
-		</div>
-	</div>
-
-	<!-- jQuery Plugin -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/confetti.js"></script>
-	<script src="js/overlay.js"></script>
-	<script>
-		function partyTime() {
-			createCanvasOverlay('rgba(255,255,255,0.5)');
-			StartConfetti();
-			setTimeout(function() {
-				StopConfetti()
-			}, 15000);
-		}
-
-		$(function() {
-			$('#magic').click(function() {
-				var img = $("#plane"),
-					width = img.get(0).width,
-					screenWidth = $(window).width(),
-					duration = 5000;
-
-				function animatePlane() {
-					img.css("left", -width).animate({
-						"left": screenWidth
-					}, duration);
-				}
-
-				animatePlane();
-			});
-		});
-
-	</script>
-	<script src="js/materialize.js"></script>
-	<script src="js/init.js"></script>
-
-	<!-- Preloader -->
-	<script type="text/javascript">
-		//<![CDATA[
-		// Please don't judge this Javascript, it'd a quick-n-dirty fix that uses Google Sheets as a backend :-)
-
-		var url = 'https://script.google.com/macros/s/AKfycbx900WkNsrY-V37U6SLrAuFaFmz6-vH1CeBKzT1QVbdEFkU4YI/exec'
-
-		$.get({
-			url: url,
-			context: document.body,
-			success: function(data) {
-				var scheduleString = '<table class="bordered responsive-table"><thead><tr><th data-field="id">Time</th><th data-field="price">Event</th></tr></thead><tbody>';
-				for (var i = 0; i < data.length; i++) {
-					scheduleString += "<tr>";
-					scheduleString += "<td>" + data[i].Time + "</td>";
-					scheduleString += "<td>" + data[i].Event + "</td>";
-					scheduleString += "<tr>";
-				}
-
-				scheduleString += "</tbody></table>"
-				$('#schedule').html(scheduleString);
-				document.getElementById("hideLoading").style.display = "none";
-			},
-			error: function() {
-				document.getElementById("hideLoading").style.display = "none";
-				$('#schedule').html('Error. Please reach out to info@hackriddle.com');
-			}
-		});
-
-
-		$(window).on('load', function() { // makes sure the whole site is loaded
-			$('#status').fadeOut(); // will first fade out the loading animation
-			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-			$('body').delay(350).css({
-				'overflow': 'visible'
-			});
-		})
-
-
-		$(document).ready(function() {
-			$.ajax({
-				url: 'https://ipapi.co/json',
-				context: document.body,
-				success: function(data) {
-					if (!data.city) {
-						$('#citystate').html('Anywhere' + ', ' + 'USA');
-						$('#citystate1').html('Anywhere' + ', ' + 'USA');
-					} else {
-						$('#citystate').html(data.city + ', ' + data.region);
-						$('#citystate1').html(data.city + ', ' + data.region);
-					}
-				},
-				error: function() {
-					$('#citystate').html('Anywhere' + ', ' + 'USA');
-					$('#citystate1').html('Anywhere' + ', ' + 'USA');
-				}
-			});
-		});
-
-		//]]>
-
-	</script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>
