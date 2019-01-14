@@ -2,99 +2,211 @@
 <html>
 
 <head>
-    <title>HackRiddle 2019 // February 9 and 10 // Daytona Beach, FL</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700,900|Yellowtail" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <style>
-        body {
-        font-family: "Lucida Console", Monaco, monospace;
-    }
+    <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/glitch.css" media="screen,projection" />
 
-    a {
-        color: #fff;
-        text-decoration: underline;
-    }
-    
-    </style>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="black white-text">
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col s8 m4 offset-s2 offset-m0 center-align">
-                <br>
-                <img width="100%" src="img/logo_small.png" />
-            </div>
-            <div class="col s12 m8">
-                <h4>HackRiddle 2019</h4>
-                <hr>
-                <h5>Date</h5>
-                <p>February 9th to February 10th, 2019</p>
-                <h5>Location</h5>
-                <p>Embry-Riddle Aeronautical University, Daytona Beach</p>
-                <h5>Mission Application</h5>
-                <p>All candidates for HackRiddle 2019 are invited to register below:</p>
-                <a href="https://goo.gl/forms/Js83QcCO6Q7CWZIx1" target="_blank" class="col s12 btn btn-large grey darken-3 waves-effect waves-light">Pre-Register</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12">
-                <hr>
-                <h3>FAQ</h3>
-                <h5>How do I sign up for HackRiddle?</h5>
-                HackRiddle accepts attendees to the event after reviewing individual applications. You can register
-                here!
+<body class="row">
+    <div class="col s12 m10 offset-m1 ">
+        <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:10px;top:0;width:10%;z-index:10000"
+            href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray"
+            target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg"
+                alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col m4 s12">
+                    <img src="graphics/header_1.png" style="max-width: 100%; max-height: 100vh;" />
+                    <div class="info-container">
+                        <h3>Feb. 9th, 2019 - Feb. 10th, 2019</h3>
+                        <h3>Mori Hosseini Student Union, Embry-Riddle Aeronautical University</h3>
+                        <br>
+                        <div class="col s12">
+                            <a href="https://goo.gl/forms/WWszQzuOoCkIl9hb2" class="button btn btn-large full" width="100%">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m8">
+                    <div class="tabs-bar">
+                        <a href="#about">About</a>
+                        <a href="#schedule">Schedule</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#partners">Partners</a>
+                    </div>
+                    <div class="info-container">
+                        <span class="title">What is HackRiddle?</span>
+                        <p>HackRiddle is a 24 hour hackathon taking place February 9th at Embry-Riddle Aeronautical
+                            University that plans to bring together over 200 students from across the nation to work on
+                            anything they set their mind to. With great sponsors, judges, mentors, and industry
+                            leaders,
+                            HackRiddle will be an innovation packed weekend for everyone in attendance!
+                        </p>
+                    </div>
+                    <div class="info-container">
+                        <a class="anchor" name="schedule"></a>
+                        <span class="title">Schedule</span>
+                        <p><i>February 9th, 2019</i></p>
+                        <p>Check in: 9:00 AM - 11:00 AM</p>
+                        <p>Hacking begins: 12:00 PM</p>
+                        <hr>
+                        <p><i>February 10th, 2019</i></p>
+                        <p>Closing: 3:00 PM</p>
+                    </div>
+                    <div class="info-container">
+                        <a class="anchor" name="faq"></a>
+                        <span class="title">FAQ</span>
+                        <div class="row">
+                            <div class="panel col s12">
+                                <h5 class="center">How do I sign up for HackRiddle?</h5>
+                                <p class="light">
+                                    <center>
+                                        HackRiddle accepts attendees to the event after reviewing individual
+                                        applications. You can <a href="https://goo.gl/forms/0JxmVmWmNXHvQNWY2" class="blacklink"
+                                            target="_blank">register here!</a>
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">Who can attend?</h5>
+                                <p class="light">
+                                    <center>
+                                        HackRiddle is open to any undergraduate at any college. Non-ERAU Students must
+                                        be at least 18 years old. Unfortunately, at this time, high schoolers (who are
+                                        younger than 18 years old) cannot attend.
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">How much does it cost to attend HackRiddle?</h5>
+                                <p class="light">
+                                    <center>
+                                        HackRiddle is entirely free, with no fees for admission. Food, swag, and
+                                        accommodations will all be provided for you with no charge.
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">What if it's my first hackathon?</h5>
+                                <p class="light">
+                                    <center>
+                                        No worries! HackRiddle is beginner friendly, so no experience necessary! There
+                                        will be plenty of workshops and mentors on hand to help you bring your wildest
+                                        dreams into creation!
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">What if I don't have a team?</h5>
+                                <p class="light">
+                                    <center>
+                                        Dont worry! We will have team forming events that will help you bring together
+                                        your dream team! Feel free to join any team. Max team size is 4 hackers.
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">What can I build?</h5>
+                                <p class="light">
+                                    <center>
+                                        Software for the web, mobile, or dekstop as well as hardware such
+                                        microcontrollers or wearables. Projects will be judged evenly, independent of
+                                        platform!
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">What should I bring?</h5>
+                                <p class="light">
+                                    <center>
+                                        Bring your Student ID for check in, along with your laptop and charger for
+                                        hacking. You can bring a sleeping bag and pillow if you want to sleep, as well
+                                        as any hardware that will help your project. Don't be afraid to represent your
+                                        school!
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">Do you provide hardware?</h5>
+                                <p class="light">
+                                    <center>
+                                        If you are planning to work on a hardware hack, feel free to bring anything you
+                                        think you'll need. We will be featuring the MLH Hardware Lab at our event!
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">Can I start working on my hack <i>before</i> HackRiddle?</h5>
+                                <p class="light">
+                                    <center>
+                                        Unfortunately, all work on your hacks must be done during the 24 hour event.
+                                        Projects that have been worked on before the start of the event won't be
+                                        allowed to enter for judging.
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">Is there a Code of Conduct?</h5>
+                                <p class="light">
+                                    <center>
+                                        We want all hackers to have a great time at HackRiddle, so we will be using the
+                                        MLH Code of Conduct. <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                                            class="blacklink" target="_new">You can read it here.</a>
+                                    </center>
+                                </p>
+                            </div>
+                            <div class="panel col s12">
+                                <h5 class="center">I'm interested in being a sponsor or a partner!</h5>
+                                <p class="light">
+                                    <center>
+                                        Being a sponsor/partner of HackRiddle has tons of benefits. Get in touch with
+                                        us at <a href="mailto:info@hackriddle.com" class="blacklink" target="_blank">info@hackriddle.com</a>!
+                                    </center>
+                                </p>
+                            </div>
 
-                <h5>What if it's my first hackathon?</h5>
-                No worries! HackRiddle is beginner friendly, so no experience necessary! There will be plenty of
-                workshops and mentors on hand to help you bring your wildest dreams into creation!
+                            <div class="panel col s12">
+                                <h5 class="center">I have a question that you haven't answered!</h5>
+                                <p class="light">
+                                    <center>
+                                        We want to create an incredible HackRiddle experience for both new and seasoned
+                                        hackers. Reach out to the organizing team at <a href="mailto:info@hackriddle.com"
+                                            class="blacklink" target="_blank">info@hackriddle.com</a> and we'll get you
+                                        squared away.
+                                    </center>
+                                </p>
+                            </div>
+                        </div>
 
-                <h5>What should I bring?</h5>
-                Bring your Student ID for check in, along with your laptop and charger for hacking. You can bring a
-                sleeping bag and pillow if you want to sleep, as well as any hardware that will help your project.
-                Don't be afraid to represent your school!
+                    </div>
+                    <div class="info-container">
+                        <a class="anchor" name="partners"></a>
+                        <span class="title">Partners</span>
+                        <br><br>
+                        <div class="row">
+                            <div class="col s12 center">
+                                <img class="filter" src="logos/rockwell_logo.png" width="90%" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s4 center">
+                                <img class="filter" src="logos/mlh-logo-color.png" width="100%" />
+                            </div>
+                            <div class="col s8 center">
+                                <img class="filter" src="logos/erau_logo_db.png" width="80%" />
 
-                <h5>I'm interested in being a partner!</h5>
-                Being a sponsor/partner of HackRiddle has tons of benefits. Get in touch with us at
-                info@hackriddle.com!
-
-                <h5>Who can attend?</h5>
-                HackRiddle is open to any undergraduate at any college. Non-ERAU Students must be at least 18 years
-                old. Unfortunately, at this time, high schoolers (who are younger than 18 years old) cannot attend.
-
-                <h5>What if I don't have a team?</h5>
-                Dont worry! We will have team forming events that will help you bring together your dream team! Feel
-                free to join any team. Max team size is 4 hackers.
-
-                <h5>Do you provide hardware?</h5>
-                If you are planning to work on a hardware hack, feel free to bring anything you think you'll need. We
-                will be featuring the MLH Hardware Lab at our event!
-
-                <h5>Is there a Code of Conduct?</h5>
-                We want all hackers to have a great time at HackRiddle, so we will be using the MLH Code of Conduct. <a
-                    href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">You can read it here.</a>
-
-                <h5>How much does it cost to attend HackRiddle?</h5>
-                HackRiddle is entirely free, with no fees for admission. Food, swag, and accommodations will all be
-                provided for you with no charge.
-
-                <h5>What can I build?</h5>
-                Software for the web and mobile as well as hardware such microcontrollers or wearables. Projects will
-                be judged evenly, independent of platform!
-
-                <h5>Can I start working on my hack before HackRiddle?</h5>
-                Unfortunately, all work on your hacks must be done during the 24 hour event. Projects that have been
-                worked on before the start of the event won't be allowed to enter for judging.
-
-                <h5>I have a question that you haven't answered!</h5>
-                We want to create an incredible HackRiddle experience for both new and seasoned hackers. Reach out to
-                the organizing team at info@hackriddle.com and we'll get you squared away.
-
-
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

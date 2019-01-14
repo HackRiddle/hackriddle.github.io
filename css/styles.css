@@ -1,0 +1,91 @@
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+    background-color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+    mix-blend-mode: screen;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+/*** Image Filter ***/
+
+.filter {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.filter:hover {
+    -webkit-filter: brightness(1) invert(0);
+    filter: brightness(1) invert(0);
+}
+
+/*** Text Elements ***/
+
+h3 {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+    font-size: 20px;
+}
+
+.title {
+    color: #d100b1;
+    /* display: block; */
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+h5 {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+    font-size: 12px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -65px;
+    visibility: hidden;
+    z-index: 99999;
+}
+
+/*** Tab Elements ***/
+
+.tabs-bar {
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+}
+
+.tabs-bar a {
+    font-family: "Lucida Console", Monaco, monospace;
+    display: inline;
+    margin: 10px;
+    position: relative;
+    padding: 15px;
+    line-height: 4em;
+    border: #3efeff solid 2px;
+    color: white;
+    font-size: 20px;
+}
+
+/*** Layout Elements ***/
+
+.panel {
+    /* border: #ccc solid 2px; */
+}
+
+
+.button {
+    background-color: #29afaf;
+    color: #fff;
+    font-size: 24px;
+    /* margin: 10px; */
+    /* padding: 10px; */
+}
+
+.info-container {
+    border: #3efeff solid 2px;
+    padding: 20px;
+    margin: 30px 10px 30px 10px;
+}
