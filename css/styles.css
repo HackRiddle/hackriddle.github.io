@@ -6,6 +6,9 @@ body {
     font-weight: bolder;
     mix-blend-mode: screen;
     /* font-family: 'Open Sans', sans-serif; */
+
+    pointer-events: none;
+
 }
 
 /*** Image Filter ***/
