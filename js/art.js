@@ -15,8 +15,9 @@ var urls = [
     "./stickers/phone.png",
     "./stickers/bottle.png",
     "./stickers/pc.png",
-    "./stickers/phone.png",
-    "./stickers/tree.png"
+    "./stickers/wave.png",
+    "./stickers/tree.png",
+    "./stickers/char.png"
 ];
 
 preloadImages();
