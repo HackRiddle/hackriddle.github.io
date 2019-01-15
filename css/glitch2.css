@@ -1,6 +1,6 @@
 .wrapper .main-content{
     width: 100%;
-  -webkit-animation: glitch 10s infinite;
+  -webkit-animation: glitch 10s infinite 3s;
   /* position:relative; */
 }
 
