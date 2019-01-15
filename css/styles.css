@@ -8,6 +8,7 @@ body {
     background-color: #000000;
     font-size: 16px;
     font-weight: bolder;
+    mix-blend-mode: overlay;
     overflow-x: hidden;
     height: 100%;
     /* font-family: 'Open Sans', sans-serif; */
