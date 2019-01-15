@@ -8,8 +8,7 @@ body {
     background-color: #000000;
     font-size: 16px;
     font-weight: bolder;
-    mix-blend-mode: screen;
-    
+    overflow-x: hidden;
     height: 100%;
     /* font-family: 'Open Sans', sans-serif; */
 }
@@ -105,4 +104,5 @@ a.anchor {
     border: #3efeff solid 2px;
     padding: 20px;
     margin: 30px 10px 30px 10px;
+    z-index: 9999 !important;
 }
