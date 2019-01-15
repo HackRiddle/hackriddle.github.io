@@ -1,0 +1,14 @@
+.wrapper .main-content{
+    width: 100%;
+  -webkit-animation: glitch 10s infinite;
+  /* position:relative; */
+}
+
+@-webkit-keyframes glitch {
+  30% {  }
+  40% { opacity:1; top:0; left:0;  -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  41% { opacity:0.8; top:0px; left:-100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(50deg,0);}
+  42% { opacity:0.8; top:0px; left:100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-80deg,0);}
+  43% { opacity:1; top:0; left:0; -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  65% { }
+}
