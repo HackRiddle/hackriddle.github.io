@@ -41,6 +41,7 @@ canvas {
     filter: brightness(1) invert(0);
 }
 
+
 /*** Text Elements ***/
 
 h3 {
@@ -96,6 +97,10 @@ a.anchor {
     /* border: #ccc solid 2px; */
 }
 
+.side-image{
+    width: 80%;
+    padding: 100px 20px 100px 20px;
+}
 
 .button {
     background-color: #29afaf;

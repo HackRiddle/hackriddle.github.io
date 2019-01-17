@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+.container {
+    background: #3A6EA5;
+    /* font-size: 8pt; */
+}
+
+.flexContainer {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.info-container,
+.tabs-bar a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+
+    color: #000 !important;
+    background: #D4D0C8;
+    box-shadow: 1px 1px 0 1px #3F3F3F, 0 0 0 2px #D4D0C8;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #848284;
+    border-bottom: 1px solid #848284;
+    height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+}
+
+.info-container .title,
+h3,
+h5 {
+    color: #000 !important;
+    font-family: "Tahoma", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+}
+
+.info-container .button {
+    margin-top: -40px;
+    font-size: 14px;
+    position: relative;
+    background: #D4D0C8;
+    color: #000;
+    box-shadow: 1px 1px #3F3F3F;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #848284;
+    border-bottom: 1px solid #848284;
+    min-height: 20px;
+    min-width: 75px;
+    outline: none;
+}
+
+.info-container .button:active {
+    background: #DBDAD7;
+    box-shadow: -1px -1px #3F3F3F;
+    border-top: 1px solid #848284;
+    border-left: 1px solid #848284;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    min-height: 20px;
+    min-width: 75px;
+    outline: none;
+}
+
+.info-container header {
+    align-items: center;
+    background: linear-gradient(to right, #08246B, #A5CBF7);
+    color: white;
+    display: flex;
+    font-weight: bold;
+    height: 18px;
+}
+
+.info-container:before {
+    content: 'Error';
+    align-items: center;
+    background: linear-gradient(to right, #08246B, #A5CBF7);
+    color: white;
+    display: flex;
+    font-weight: bold;
+    height: 18px;
+    width: 100%;
+}
+
+.info-container header * {
+    margin-left: 2px;
+}
+
+.info-container header img {
+    height: 16px;
+    width: 16px;
+}
+
+.info-container .spacer {
+    margin: 20px auto;
+}

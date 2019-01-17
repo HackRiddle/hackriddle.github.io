@@ -14,11 +14,12 @@
     <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/glitch.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/glitch2.css" media="screen,projection" />
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="" />
 
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#d100b1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -26,12 +27,12 @@
 </head>
 
 <body class="row wrapper">
-        <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:absolute;right:10px;top:0;width:10%;z-index:10000"
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:absolute;right:10px;top:0;width:10%;z-index:10000"
         href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray"
         target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg"
             alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
     <div class="col s12 m10 offset-m1 main-content">
-        
+
         <div class="container">
             <div class="row">
                 <div class="col m4 s12">
@@ -47,6 +48,20 @@
                     <a href="javascript:createCanvasOverlay('rgba(0,0,0,0)');">
                         <img src="stickers/bust.png" />
                     </a>
+                    <div class="hide-on-small-only">
+                        <div class="col s12">
+                            <img class="side-image" src="graphics/slingshot.png" />
+                        </div>
+                        <div class="col s12">
+                            <img class="side-image" src="graphics/studentunion.png" />
+                        </div>
+                        <div class="col s12">
+                            <img style="width: 100%;" class="side-image" src="graphics/speedway.png" />
+                        </div>
+                        <div class="col s12">
+                            <img class="side-image" src="graphics/car.png" />
+                        </div>
+                    </div>
                 </div>
                 <div class="col s12 m8">
                     <div class="tabs-bar">
@@ -55,6 +70,7 @@
                         <a href="#faq">FAQ</a>
                         <a href="#partners">Partners</a>
                     </div>
+
                     <div class="info-container">
                         <span class="title">What is HackRiddle?</span>
                         <p>HackRiddle is a 24 hour hackathon taking place February 9th at Embry-Riddle Aeronautical
@@ -222,10 +238,23 @@
                 </div>
             </div>
         </div>
+            <img style="width: 100px;" onclick="setStyleSheet('css/windows.css')" src="graphics/windows.png"/>
         <div class="scanline"></div>
     </div>
     <script>
+        function setStyleSheet(url) {
+            var audio = new Audio('https://www.soundboard.com/mediafiles/22/229358-2e18d975-a7ce-414d-9c8c-cf8cfb285ad9.mp3');
+            audio.play();
 
+            var imgs = document.getElementsByTagName("img");
+            for (var i = 0, l = imgs.length; i < l; i++) {
+                imgs[i].src =
+                    "https://cdn.pixilart.com/photos/large/7b5568100c95d05.png";
+            }
+
+            var stylesheet = document.getElementById("stylesheet");
+            stylesheet.setAttribute('href', url);
+        }
     </script>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
