@@ -1,33 +1,80 @@
+<!-- 
+    
+    This goofy site wouldn't have been possible without dependence on 
+    the following libraries and inspiration code. All code used in this site has been 
+    modified from the original and is available for reuse with reference to
+    the original author:
+
+    - Robbie Talenti's 'Vaporwave Loader' (https://codepen.io/sangra4l/pen/zaPVjW)
+    - Chris Rickel's 'Interference' (https://codepen.io/cRckls/pen/tvbgG)
+    - Sparkpin's Windows 2000 Dialog (https://codepen.io/sparkpin/pen/VbMmBW)
+    - F. Permadi's guide on HTML5 Canvas (https://goo.gl/ZJqJLJ)
+    - Niklaus Gerber's PreLoadMe (https://github.com/niklausgerber/PreLoadMe)
+    - Materialize (https://materializecss.com/)
+
+ -->
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>HackRiddle 2019 // February 9 and 10 // Daytona Beach, FL</title>
+    <title>
+        HackRiddle 2019 // February 9 and 10 // Daytona Beach, FL
+    </title>
 
-    <!--Import Google Icon Font-->
+    <!-- G o o g l e ' s f o n t s -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700,900|Yellowtail" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <!--Import materialize.css-->
+    <!-- s t y l e s -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/glitch.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/glitch2.css" media="screen,projection" />
     <link id="stylesheet" rel="stylesheet" type="text/css" href="" />
 
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#d100b1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 </head>
 
 <body class="row wrapper">
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:absolute;right:10px;top:0;width:10%;z-index:10000"
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="sun-container">
+                <div class="sun">
+                    <div class="bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="sun-plane">
+                    <img src="graphics/plane.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:absolute;right:10px;top:0;width:10%;z-index:100"
         href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray"
         target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg"
             alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
@@ -238,12 +285,13 @@
                 </div>
             </div>
         </div>
-            <img style="width: 100px;" onclick="setStyleSheet('css/windows.css')" src="graphics/windows.png"/>
+        <img style="width: 100px;" onclick="setStyleSheet('css/windows.css')" src="graphics/windows.png" />
         <div class="scanline"></div>
     </div>
     <script>
         function setStyleSheet(url) {
-            var audio = new Audio('https://www.soundboard.com/mediafiles/22/229358-2e18d975-a7ce-414d-9c8c-cf8cfb285ad9.mp3');
+            var audio = new Audio(
+                'https://www.soundboard.com/mediafiles/22/229358-2e18d975-a7ce-414d-9c8c-cf8cfb285ad9.mp3');
             audio.play();
 
             var imgs = document.getElementsByTagName("img");
@@ -259,7 +307,20 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/art.js"></script>
-
+    <!-- jQuery Plugin -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        })
+        //]]>
+    </script>
 </body>
 
 </html>

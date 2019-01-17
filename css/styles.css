@@ -1,12 +1,20 @@
-* { margin: 0; padding: 0;}
-body, html { height:100%; }
+/*** Global styles (a little hacky but necessary) ***/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
 
 html {
     display: table;
 }
 
 body {
-    display:table-cell;
+    display: table-cell;
 }
 
 body {
@@ -15,18 +23,159 @@ body {
     background-color: #000000;
     font-size: 16px;
     font-weight: bolder;
-    /* TODO: Figure out how to make egg work without breaking android */
-    /* mix-blend-mode: screen; */
     overflow-x: hidden;
     height: 100%;
-    /* font-family: 'Open Sans', sans-serif; */
 }
 
 canvas {
-    position:absolute;
-    background-color: rgb(0,0,0,0);
-    width:100%;
-    height:100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+/*** Preloader Style ***/
+body {
+    overflow: hidden;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../img/status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+.loader-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sun-container {
+    position: relative;
+    opacity: .85;
+    height: 300px;
+    width: 300px;
+}
+
+.sun {
+    border: #000 1px solid;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(92deg, #3efeff 0%, #3efeff 45%, #d100b1 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d100b1), color-stop(55%, #3efeff), color-stop(100%, #3efeff));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(92deg, #3efeff 0%, #3efeff 45%, #d100b1 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(92deg, #3efeff 0%, #3efeff 45%, #d100b1 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(92deg, #3efeff 0%, #3efeff 45%, #d100b1 100%);
+    /* ie10+ */
+    background: linear-gradient(358deg, #3efeff 0%, #3efeff 45%, #d100b1 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d100b1', endColorstr='#3efeff', GradientType=0);
+    /* ie6-9 */
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: -2px 9px 91px 11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 9px 91px 11px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 9px 91px 11px rgba(0, 0, 0, 0.75);
+}
+
+.sun-plane {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.sun-plane img {
+    width: 90%;
+    margin-top: 30%;
+}
+
+.bars {
+    width: 100%;
+    height: 200%;
+    top: -100%;
+    margin-top: 0px;
+    position: absolute;
+    -webkit-animation: movebars 13s linear infinite;
+    overflow: hidden;
+}
+
+.bar {
+    height: 2.5%;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 5%;
+    -webkit-box-shadow: inset -2px -1px 137px -30px rgba(40, 0, 54, 0.58);
+    -moz-box-shadow: inset -2px -1px 137px -30px rgba(40, 0, 54, 0.58);
+    box-shadow: inset -2px -1px 137px -30px rgba(40, 0, 54, 0.58);
+
+}
+
+@-webkit-keyframes movebars {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 100%;
+    }
+}
+
+@-moz-keyframes movebars {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 100%;
+    }
+}
+
+@-o-keyframes movebars {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 100%;
+    }
 }
 
 /*** Image Filter ***/
@@ -94,10 +243,10 @@ a.anchor {
 /*** Layout Elements ***/
 
 .panel {
-    /* border: #ccc solid 2px; */
+    /* This is a stub for styling invidiual FAQs */
 }
 
-.side-image{
+.side-image {
     width: 80%;
     padding: 100px 20px 100px 20px;
 }
@@ -106,8 +255,6 @@ a.anchor {
     background-color: #29afaf;
     color: #fff;
     font-size: 24px;
-    /* margin: 10px; */
-    /* padding: 10px; */
 }
 
 .info-container {
