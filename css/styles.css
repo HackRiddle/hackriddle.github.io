@@ -221,6 +221,15 @@ a.anchor {
     z-index: 99999;
 }
 
+a {
+    color: #3efeff;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #2bb3b3;
+}
+
 /*** Tab Elements ***/
 
 .tabs-bar {
@@ -238,6 +247,7 @@ a.anchor {
     border: #3efeff solid 2px;
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
 /*** Layout Elements ***/
